@@ -27,7 +27,7 @@
 		},
 
 		mounted() {
-			await this.loadBox();
+			this.loadBox();
 		},
 		methods: {
 			async loadBox() {
