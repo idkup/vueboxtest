@@ -33,7 +33,7 @@
 				const resp = await fetch("https://rebornwebserver.pages.dev/box/");
 				let mon_arr: number[];
 				const mons = await resp.json();
-				for (let const mon in mons) {
+				for (let mon in mons) {
 					mon_arr.push(mon.species);
 				}
 				this.mons = mon_arr;
