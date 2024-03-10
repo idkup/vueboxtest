@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 v-text="mons" />
-	<h3>mons (<span v-text="mons[0]" />)</h3>
+    <h1 v-text="raw" />
+	<h3 v-text="mons" />
   </div>
 </template>
 
@@ -20,13 +20,14 @@
 		data() {
 			let arr: string[] = [];
 			return {
+				raw: "",
 				mons: arr,
 				loadingBox: false,
 			};
 		},
 
 		mounted() {
-			this.loadBox();
+			await this.loadBox();
 		},
 		methods: {
 			async loadBox() {
@@ -37,6 +38,7 @@
 				for (let mon in mons) {
 					mon_arr.push(mon);
 				}
+				this.raw = mons;
 				this.mons = mon_arr;
 				this.loadingBox = false;
 			},
