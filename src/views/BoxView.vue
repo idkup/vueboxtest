@@ -18,7 +18,7 @@
 <script lang="ts" type="module">
 	export default {
 		data() {
-			let arr: string[];
+			let arr: string[] = [];
 			return {
 				mons: arr,
 				loadingBox: false,
