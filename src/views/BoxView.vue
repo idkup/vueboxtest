@@ -1,7 +1,7 @@
 <template>
-  <div class="box">
-    <h1>v-text="box.name"</h1>
-	<h3>mons (<span v-text="box.mons ? box.mons.length : 0" />)</h3>
+  <div>
+    <h1>v-text="aaaaaaaaaaa"</h1>
+	<h3>mons (<span v-text="mons ? mons.length : 0" />)</h3>
   </div>
 </template>
 
@@ -19,7 +19,7 @@
 	export default {
 		data() {
 			return {
-				mons: [],
+				mons: null,
 				loadingBox: false,
 			};
 		},
@@ -31,7 +31,7 @@
 			async loadBox() {
 				this.loadingBox = true;
 				const resp = await fetch("https://rebornwebserver.pages.dev/box/");
-				let mon_arr = [];
+				let mon_arr: var[] = [];
 				const mons = await resp.json();
 				for (let mon in mons) {
 					mon_arr.push(mon);
