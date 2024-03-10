@@ -19,7 +19,7 @@ const router = createRouter({
     },
 	{
 	  path: '/box',
-	  name: 'box'
+	  name: 'box',
 	  component: () => import('../views/BoxView.vue')
 	}
   ]
