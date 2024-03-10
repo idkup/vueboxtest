@@ -15,7 +15,7 @@
 }
 </style>
 
-<script type="module">
+<script setup-lang="ts", type="module">
 	export default {
 		data() {
 			return {
