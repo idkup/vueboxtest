@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>v-text="mons"</h1>
-	<h3>mons (<span v-text="loadingBox" />)</h3>
+    <h1 v-text="mons" />
+	<h3>mons (<span v-text="mons[0]" />)</h3>
   </div>
 </template>
 
