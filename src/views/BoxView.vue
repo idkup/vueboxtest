@@ -18,8 +18,9 @@
 <script lang="ts" type="module">
 	export default {
 		data() {
+			let arr: string[];
 			return {
-				mons: null,
+				mons: arr,
 				loadingBox: false,
 			};
 		},
