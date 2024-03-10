@@ -35,6 +35,7 @@
 				const resp = await fetch("https://rebornwebserver.pages.dev/box/");
 				let mon_arr: string[] = [];
 				const mons = await resp.json();
+				console.log(mons);
 				for (let mon in mons) {
 					mon_arr.push(mon);
 				}
