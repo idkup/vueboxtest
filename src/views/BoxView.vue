@@ -26,8 +26,8 @@
 			};
 		},
 
-		mounted() {
-			this.loadBox();
+		async mounted() {
+			await this.loadBox();
 		},
 		methods: {
 			async loadBox() {
