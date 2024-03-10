@@ -19,7 +19,7 @@
 	export default {
 		data() {
 			return {
-				mons: null,
+				mons: [],
 				loadingBox: false,
 			};
 		},
@@ -34,7 +34,7 @@
 				let mon_arr = [];
 				const mons = await resp.json();
 				for (let mon in mons) {
-					mon_arr.push(mon.species);
+					mon_arr.push(mon);
 				}
 				this.mons = mon_arr;
 				this.loadingBox = false;
