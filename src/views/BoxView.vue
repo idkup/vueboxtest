@@ -22,7 +22,7 @@
 				mons: null,
 				loadingBox: false,
 			};
-		};
+		},
 
 		mounted() {
 			this.loadBox();
