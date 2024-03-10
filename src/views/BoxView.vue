@@ -31,7 +31,7 @@
 			async loadBox() {
 				this.loadingBox = true;
 				const resp = await fetch("https://rebornwebserver.pages.dev/box/");
-				let mon_arr: var[] = [];
+				let mon_arr = [];
 				const mons = await resp.json();
 				for (let mon in mons) {
 					mon_arr.push(mon);
